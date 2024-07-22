@@ -11,10 +11,11 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <div id="wrapper">
-	<div class="banner">
+	<!-- <div class="banner">
 		<div class="row">
 				<div class="col-12">
 					<div class="banner-slider">
@@ -33,8 +34,8 @@
 					</div>
 				</div>
 			</div>
-	</div>
-<div class="banner-services">
+	</div> -->
+<!-- <div class="banner-services">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -72,8 +73,8 @@
 			</div>
 		</div>
 	</div>
-</div>
-<section class="whoweare">
+</div> -->
+ <section class="whoweare">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -84,8 +85,8 @@
 			</div>
 		</div>
 	</div>
-</section>
-<section class="our-services">
+</section> 
+<!-- <section class="our-services">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -175,12 +176,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Add more accordion items as needed -->
                 </div>
             </div>
         </div>
-    </section>
-<section class="our-experts">
+    </section> -->
+<!-- <section class="our-experts">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -263,8 +263,8 @@
 			</div>
 		</div>
 	</div>
-</section>
-<section class="experience-matters">
+</section> -->
+<!-- <section class="experience-matters">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -299,100 +299,173 @@
 			</div>
 		</div>
 	</div>
-</section>
-<div class="image-gallery">
+</section> -->
+<!-- image filtering -->
+<div class="container text-center mt-4">
+	<div class="btn-group" role="group" aria-label="Filter Buttons">
+		<div class="btn-row">
+			<button type="button" class="filter-btn filter-active" data-filter="all">All</button>
+		  <button type="button" class="filter-btn" data-filter="front-yard">Front Yard</button>
+		  <button type="button" class="filter-btn" data-filter="back-yard">Back Yard</button>
+		  <button type="button" class="filter-btn" data-filter="pools">Pools</button>
+		</div>
+		<div class="btn-row">
+		  <button type="button" class="filter-btn" data-filter="maintenance">Maintenance</button>
+		  <button type="button" class="filter-btn" data-filter="garden">Gardens</button>
+		  <button type="button" class="filter-btn" data-filter="structure">Structure</button>
+		</div>
+	  </div>
+	<div class="row mt-4">
+		<div class="col-lg-3 col-md-4 col-sm-12 img-container maintenance show">
+			<img class="filter-img" src="./images/maintaince4.jpg" class="img-fluid" alt="Front Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-12 img-container maintenance show">
+			<img class="filter-img" src="./images/maintaince1.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-sm-12 img-container pools show">
+			<img class="filter-img" src="./images/pool2.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-12 img-container structure show">
+			<img class="filter-img" src="./images/structure2.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container front-yard show">
+			<img class="filter-img" src="./images/front-yard3.jpg" class="img-fluid" alt="Front Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container structure show">
+			<img class="filter-img" src="./images/structure4.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container maintenance show">
+			<img class="filter-img" src="./images/maintaince2.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container structure show">
+			<img class="filter-img" src="./images/structure1.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container pools  show">
+			<img class="filter-img" src="./images/pool3.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container back-yard show">
+			<img class="filter-img" src="./images/back-yard2.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container structure show">
+			<img class="filter-img" src="./images/structure3.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container front-yard show">
+			<img class="filter-img" src="./images/front-yard2.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container maintenance show">
+			<img class="filter-img" src="./images/maintaince4.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container garden show">
+			<img class="filter-img" src="./images/garden2.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container show">
+			<img class="filter-img" src="./images/banner.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container  pools show">
+			<img class="filter-img" src="./images/pool4.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container garden show">
+			<img class="filter-img" src="./images/garden3.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container front-yard show">
+			<img class="filter-img" src="./images/front-yard4.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container back-yard show">
+			<img class="filter-img" src="./images/back-yard1.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container garden show">
+			<img class="filter-img" src="./images/garden4.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container back-yard show">
+			<img class="filter-img" src="./images/back-yard3.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container back-yard show">
+			<img class="filter-img" src="./images/back-yard4.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container Pools show">
+			<img class="filter-img" src="./images/pool1.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+		<div class="col-lg-3 col-md-4 col-sm-6 img-container garden show">
+			<img class="filter-img" src="./images/garden1.jpg" class="img-fluid" alt="Back Yard">
+		</div>
+
+
+
+	</div>
+</div>
+<!-- footer section -->
+<footer class="footer">
 	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+				<div class="footer-logo">
+					<img src="./images/footer-logo.png" alt="Footer Logo">
+				</div>
+				<div class="footer-content">
+					<p>We are a family run premium landscaping company servicing Oakville, with over 40 years of experience.</p>
+					<i class="fa-brands fa-facebook-f"></i><i style="margin-left: 10px;" class="fa-brands fa-instagram"></i>
+
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+				<h6>Useful Links</h6>
+				<hr class="underline">
+				<ul>
+					<li><a href="#" class="footer-link">Home</a></li>
+					<li><a href="#" class="footer-link">Services</a></li>
+					<li><a href="#" class="footer-link">Gallery</a></li>
+					<li><a href="#" class="footer-link">About</a></li>
+					<li><a href="#" class="footer-link">Team</a></li>
+					<li><a href="#" class="footer-link">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+				<h6>Services</h6>
+				<hr class="underline">
+				<ul>
+					<li><a href="#" class="footer-link">Landscape Design</a></li>
+					<li><a href="#" class="footer-link">Construction</a></li>
+					<li><a href="#" class="footer-link">Maintenance</a></li>
+					<li><a href="#" class="footer-link">Snow Removal</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+				<h6>Contact</h6>
+				<hr class="underline">
+
+				<ul class="contact-info">
+					<li><a href="#" class="footer-link"><img src="" alt="">(905) 845-5446</a></li>
+					<li><a href="#" class="footer-link"><img src="" alt="">info@weykamplandscaping.com</a></li>
+				</ul>
+				<div class="btn-box">
+					<a href="#" class="footer-btn">Let's talk</a>
+				</div>
+			</div>
+		</div>
+		<hr class="hr">
 		<div class="row">
 			<div class="col-12">
 				<div class="contentbox">
-
+					<p>Copyright 2024, Weykamp Landscaping. All Rights Reserved.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-3">
-				<div class="footer-logo">
-					<img src="" alt="">
-				</div>
-				<div class="footer-content">
-					<p>We are a family run premium landscaping company servicing Oakville, with over 40 years of experience.</p>
-				</div>
-				<div class="col-3">
-					<h6>Usefull Links</h6>
-					<ul>
-						<li>
-							<a href="#" class="footer-link">Home</a>
-						</li>
-						<li>
-							<a href="#" class="footer-link">Services</a>
-						</li>
-						<li>
-							<a href="#" class="footer-link">Gallery</a>
-						</li>
-						<li>
-							<a href="#" class="footer-link">About</a>
-						</li>
-						<li>
-							<a href="#" class="footer-link">Team</a>
-						</li>
-						<li>
-							<a href="#" class="footer-link">Contact</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<h6>Services</h6>
-					<ul>
-						<li>
-							<a href="#" class="footer-link">Landscape Design</a>
-						</li>
-						<li>
-							<a href="#" class="footer-link">Construction</a>
-						</li>
-						<li>
-							<a href="#" class="footer-link">Maintenance</a>
-						</li>
-						<li>
-							<a href="#" class="footer-link">Snow Removal</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<h6>Contact</h6>
-					<ul>
-						<li>
-							<a href="#" class="footer-link"><img src="" alt="">(905) 845-5446</a>
-						</li>
-						<li>
-							<a href="#" class="footer-link"><img src="" alt="">info@weykamplandscaping.com</a>
-						</li>
-						<div class="btn-box">
-							<a href="" class="footer-btn">
-								Lets talk
-							</a>
-						</div>
-					</ul>
-				</div>
-		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-12">
-		<div class="contentbox">
-			<p>Copyright 2024, Weykamp Landscaping. All Rights Reserved.</p>
-		</div>
-	</div>
-</div>
 </footer>
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/custom.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
