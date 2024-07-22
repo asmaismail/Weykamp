@@ -1,5 +1,4 @@
 html, body {
-
 	 -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -74,8 +73,7 @@ h4 {font: 400 24px/30px 'Montserrat';margin: 0 0 20px;color: #000;text-transform
 h5 {font: 400 100%/100% 'Montserrat';margin: 0 0 20px;color: #000;text-transform: capitalize;}
 h6 {font: 400 100%/100% 'Montserrat';margin: 0 0 20px;color: #000;text-transform: capitalize;}
 
-.mt-btn{
-text-decoration: none !important;display: block; color: #000;width: 100%;max-width:195px;height:45px;font-family: 'Montserrat';border-radius: 2px;line-height: 24px;text-align: center;vertical-align: middle; padding: 10px;font-size: 16px;font-weight: 700;margin: 0;background: transparent;transition: all .5s;text-transform: uppercase; border: 1px solid #000;}
+.mt-btn{text-decoration: none !important;display: block; color: #000;width: 100%;max-width:195px;height:45px;font-family: 'Montserrat';border-radius: 2px;line-height: 24px;text-align: center;vertical-align: middle; padding: 10px;font-size: 16px;font-weight: 700;margin: 0;background: transparent;transition: all .5s;text-transform: uppercase; border: 1px solid #000;}
 
 .mt-btn:hover,.mt-btn:focus{background: #000;color: #fff; border: 1px solid #000 !important; opacity: 1 !important}
 
@@ -147,7 +145,7 @@ sup { top: -.5em; }
 @media (max-width: 768px) {.btn-group { flex-direction: column;}.btn-group .btn {  width: 100%; }}
 @media (max-width: 576px) {
 .btn-group .btn {padding: 10px;font-size: 14px; }}
-.filter-img{height: 40vh; margin-bottom: 15px;}
+.filter-img{height: 40vh; margin-bottom: 20px;}
 .team-section {text-align: center;}
 .team-section p { color: #777;}
 .team-section img {
@@ -160,4 +158,62 @@ sup { top: -.5em; }
 .experts{
   background-color: rgb(246, 244, 244); width: 100%;
 }
+/* counter up  */
+.counter {
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  overflow: hidden;
+  content: "";
+  background: url('../images/experience-bg.jpg') no-repeat center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
+}
 
+.counter-up {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.counter-label {
+  font-size: 1.2em;
+}
+/* services  */
+.tab-content img {
+  width: 100%;
+  height: auto;
+}
+.services .list{
+  list-style: disc; 
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+.services .row .col-md-12  h6{
+  text-align: center!important;
+  width: auto; background-color: yellow; max-width: 35px;
+}
+.services .button{border: 1px solid black; color: black; background-color: white!important; padding: 8px; margin-top: 30px; margin-bottom: 8px;}
+.services .button:hover{background-color: green!important; color: white;
+}
+.services .services-links li a{
+text-decoration: none; color: black!important; margin-left: 5px; border-radius: 0%;}
+.services .services-links li .active{
+  background-color: green!important; color: white!important; text-decoration: none;
+}
+.banner-services{margin-top: 20px; background-color: white;}
+.carousel{
+  /* height: 90vh; */
+}
+.carousel img{ height: 500px!important;}
+.navbar{
+  height: 80px;
+
+}
+.navbar .row{ margin: 15px;}
+.navbar .contact-item{margin-right: -10px; background-color: yellow;}

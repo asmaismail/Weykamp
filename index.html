@@ -14,66 +14,148 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<div id="wrapper">
-	<!-- <div class="banner">
-		<div class="row">
-				<div class="col-12">
-					<div class="banner-slider">
-						<div class="imgbox">
-							<img src="images/banner.jpg" alt="Banner Image">
-						</div>
-						<div class="imgbox">
-							<img src="images/banner.jpg" alt="Banner Image">
-						</div>
-						<div class="imgbox">
-							<img src="images/banner.jpg" alt="Banner Image">
-						</div>
-						<div class="imgbox">
-							<img src="images/banner.jpg" alt="Banner Image">
-						</div>
-					</div>
-				</div>
+	<!-- navbar  -->
+		 <nav class="navbar navbar-light bg-light justify-content-between">
+		<a class="navbar-brand"><img style="height: 5vh; width: auto; margin-top: -10px; margin-left: 20px;" src="images/logo.png"></a>
+		<form class="form-inline">
+			<div style="background-color: yellow; width:40vw; display: flex; flex-direction: row;" class="">
+				<i class="fa-solid fa-mobile-screen-button"></i>
+				<p class="">CALL US</p>
+				<p class="">(905) 845-5446</p>
+				<i style="margin-left: 50px;" class="fa-regular fa-envelope"></i>
+				<p >EMAIL US</p>
+				<p class="contact-detail">hello@weykamplandscaping.ca</p>
 			</div>
-	</div> -->
-<!-- <div class="banner-services">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="main-services">
-					<div class="row">
-						<div class="col-12 col-md-4">
-							<div class="imgbox">
-								<img src="images/pencil.png" alt="Icon">
+
+		</form>
+	  </nav>
+	<!-- slider  -->
+	<div id="carouselExampleControls" class="carousel slide z-1" data-ride="carousel">
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img class="d-block w-100 h-50" src="images/back-yard3.jpg" alt="First slide">
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100 h-50" src="images/front-yard3.jpg" alt="Second slide">
+		  </div>
+		  <div class="carousel-item">
+			<img class="d-block w-100 h-50" src="images/pool3.jpg" alt="Third slide">
+		  </div>
+		</div>
+	  </div>
+	<!-- banner services  -->
+	<div style="background-color: white;" class="banner-services -mt-5 z-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="main-services">
+						<div class="row">
+							<div class="col-12 col-md-4">
+								<div class="imgbox">
+									<img src="images/pencil.png" alt="Icon">
+								</div>
+								<div  class="contentbox">
+									<h6>landscape Design</h6>
+									<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
 							</div>
-							<div class="contentbox">
-								<h6>landscape Design</h6>
-								<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<div class="col-12 col-md-4">
+								<div class="imgbox">
+									<img src="images/tree.png" alt="Icon">
+								</div>
+								<div class="contentbox">
+									<h6>maintenance</h6>
+									<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-12 col-md-4">
-							<div class="imgbox">
-								<img src="images/tree.png" alt="Icon">
-							</div>
-							<div class="contentbox">
-								<h6>maintenance</h6>
-								<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
-						</div>
-						<div class="col-12 col-md-4">
-							<div class="imgbox">
-								<img src="images/folder.png" alt="Icon">
-							</div>
-							<div class="contentbox">
-								<h6>snow removal</h6>
-								<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<div class="col-12 col-md-4">
+								<div class="imgbox">
+									<img src="images/folder.png" alt="Icon">
+								</div>
+								<div class="contentbox">
+									<h6>snow removal</h6>
+									<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>  
+	<!-- services  -->
+<div class="container-fluid services my-5">
+	<div class="container">
+
+		<h2 class="text-center">OUR SERVICES</h2>
+		<ul class="nav nav-tabs justify-content-center services-links" id="myTab" role="tablist">
+		  <li class="nav-item">
+			<a class="nav-link active" id="landscape-tab" data-toggle="tab" href="#landscape" role="tab" aria-controls="landscape" 
+			aria-selected="true">LANDSCAPE DESIGN</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="maintenance-tab" data-toggle="tab" href="#maintenance" role="tab" aria-controls="maintenance" aria-selected="false">MAINTENANCE</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" id="snowremoval-tab" data-toggle="tab" href="#snowremoval" role="tab" aria-controls="snowremoval" aria-selected="false">SNOW REMOVAL</a>
+		  </li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+		  <div class="tab-pane fade show active" id="landscape" role="tabpanel" aria-labelledby="landscape-tab">
+			<div class="row my-4">
+			  <div class="col-md-6">
+				<h3 class="mt-5">LANDSCAPE DESIGN</h3>
+				<p>We create custom landscape designs to fit your lifestyle. We are a full-service landscaping company dedicated to creating an environment that meets your needs and fits your budget. Whether you are looking for a small upgrade or a complete property design, we are prepared and equipped to make your property dream a reality.</p>
+				<ul class="list">
+				  <li>CUSTOM DESIGN</li>
+				  <li>NATURAL STONEWORK</li>
+				  <li>INTERLOCKING</li>
+				</ul>
+				<button class="button">LET'S TALK</button>
+			  </div>
+			  <div class="col-md-6">
+				<img src="images/front-yard2.jpg" alt="Landscape Design">
+			  </div>
+			</div>
+		  </div>
+		  <div class="tab-pane fade" id="maintenance" role="tabpanel" aria-labelledby="maintenance-tab">
+			<div class="row my-4">
+			  <div class="col-md-6">
+				<h3 class="mt-5">MAINTENANCE</h3>
+				<p>Our maintenance services ensure that your property remains beautiful and functional all year round. From lawn care to seasonal cleanups, our team is dedicated to keeping your landscape in top condition.</p>
+				<ul class="list">
+				  <li>LAWN CARE</li>
+				  <li>GARDENING</li>
+				  <li>PRUNING</li>
+				</ul>
+				<button class="button">LET'S TALK</button>
+			  </div>
+			  <div class="col-md-6">
+				<img src="images/maintaince2.jpg" alt="Maintenance">
+			  </div>
+			</div>
+		  </div>
+		  <div class="tab-pane fade" id="snowremoval" role="tabpanel" aria-labelledby="snowremoval-tab">
+			<div class="row my-4">
+			  <div class="col-md-6">
+				<h3 class="mt-5">SNOW REMOVAL</h3>
+				<p>Our snow removal services ensure your property is safe and accessible during the winter months. We provide prompt and reliable snow clearing for driveways, walkways, and more.</p>
+				<ul class="list">
+				  <li>DRIVEWAY CLEARING</li>
+				  <li>WALKWAY CLEARING</li>
+				  <li>SALTING</li>
+				</ul>
+				<button class="button">LET'S TALK</button>
+			  </div>
+			  <div class="col-md-6">
+				<img src="images/pool3.jpg" alt="Snow Removal">
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
 	</div>
-</div> -->
+
 <!-- who we are   -->
 <section class="whoweare">
 	<div class="container">
@@ -192,7 +274,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-6 col-sm-12">
-				<img style="" src="images/about-us.jpg">
+				<img src="images/about-us.jpg">
 			</div>
 			<div class="col-lg-6 col-sm-12">
 				<br>
@@ -207,8 +289,8 @@
 	</div>
 </div>
 	<!-- our experts  -->
-	<section class="whoweare">
-	<div class="container">
+	<section class="experts whoweare">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
 				<div class="contentbox">
@@ -219,91 +301,80 @@
 		</div>
 	</div>
 </section> 
-<section class="team-section container">
-	<div class="row">
-		<div class="col-md-3 col-sm-12 text-center">
-			<img src="images/simon.jpg" alt="Simon Cowell" class="">
-			<h6>Simon Cowell</h6>
-			<p>Owner, Designer</p>
-		</div>
-		<div class="col-md-3 col-sm-6 text-center">
-			<img src="images/howie.jpg" alt="Howie Mandel" class="">
-			<h6>Howie Mandel</h6>
-			<p>Project Manager</p>
-		</div>
-		<div class="col-md-3 col-sm-6 text-center">
-			<img src="images/nick.jpg" alt="Nick Cannon" class="">
-			<h6>Nick Cannon</h6>
-			<p>Carpenter</p>
-		</div>
-		<div class="col-md-3 col-sm-6 text-center">
-			<img src="images/heidi.jpg" alt="Heidi Klum" class="">
-			<h6>Heidi Klum</h6>
-			<p>Labourer</p>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-3 col-sm-12 text-center">
-			<img src="images/simon.jpg" alt="Simon Cowell" class="">
-			<h6>Simon Cowell</h6>
-			<p>Owner, Designer</p>
-		</div>
-		<div class="col-md-3 col-sm-6 text-center">
-			<img src="images/howie.jpg" alt="Howie Mandel" class="">
-			<h6>Howie Mandel</h6>
-			<p>Project Manager</p>
-		</div>
-		<div class="col-md-3 col-sm-6 text-center">
-			<img src="images/nick.jpg" alt="Nick Cannon" class="">
-			<h6>Nick Cannon</h6>
-			<p>Carpenter</p>
-		</div>
-		<div class="col-md-3 col-sm-6 text-center">
-			<img src="images/heidi.jpg" alt="Heidi Klum" class="">
-			<h6>Heidi Klum</h6>
-			<p>Labourer</p>
-		</div>
-	</div>
-</section>
-
-<!-- <section class="experience-matters">
-	<div class="container">
+<div class="experts container-fluid">
+	<section class="team-section container">
 		<div class="row">
-			<div class="col-12">
-				<div class="contentbox">
-					<h6>experience matters</h6>
-					<h1>over 40 years of it</h1>
-				</div>
+			<div class="col-md-3 col-sm-12 text-center">
+				<img src="images/simon.jpg" alt="Simon Cowell" class="">
+				<h6>Simon Cowell</h6>
+				<p>Owner, Designer</p>
 			</div>
-			<div class="col-3">
-				<div class="years-expert">
-					<span>40</span>
-					<h6>years of experience</h6>
-				</div>
+			<div class="col-md-3 col-sm-6 text-center">
+				<img src="images/howie.jpg" alt="Howie Mandel" class="">
+				<h6>Howie Mandel</h6>
+				<p>Project Manager</p>
 			</div>
-			<div class="col-3">
-				<div class="years-expert">
-					<span>40</span>
-					<h6>years of experience</h6>
-				</div>
+			<div class="col-md-3 col-sm-6 text-center">
+				<img src="images/nick.jpg" alt="Nick Cannon" class="">
+				<h6>Nick Cannon</h6>
+				<p>Carpenter</p>
 			</div>
-			<div class="col-3">
-				<div class="years-expert">
-					<span>40</span>
-					<h6>years of experience</h6>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="years-expert">
-					<span>40</span>
-					<h6>years of experience</h6>
-				</div>
+			<div class="col-md-3 col-sm-6 text-center">
+				<img src="images/heidi.jpg" alt="Heidi Klum" class="">
+				<h6>Heidi Klum</h6>
+				<p>Labourer</p>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-12 text-center">
+				<img src="images/simon.jpg" alt="Simon Cowell" class="">
+				<h6>Simon Cowell</h6>
+				<p>Owner, Designer</p>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center">
+				<img src="images/howie.jpg" alt="Howie Mandel" class="">
+				<h6>Howie Mandel</h6>
+				<p>Project Manager</p>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center">
+				<img src="images/nick.jpg" alt="Nick Cannon" class="">
+				<h6>Nick Cannon</h6>
+				<p>Carpenter</p>
+			</div>
+			<div class="col-md-3 col-sm-6 text-center">
+				<img src="images/heidi.jpg" alt="Heidi Klum" class="">
+				<h6>Heidi Klum</h6>
+				<p>Labourer</p>
+			</div>
+		</div>
+	</section>
+
+</div>
+<!-- counter up  -->
+<div class=" counter container-fluid">
+	<h3 style="color: white;" class="brown-one">EXPERIENCE MATTERS</h3>
+	<h6 class="mb-5">OVER 40 YEARS OF IT</h6>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="counter-up" data-count="40">0</div>
+			<div class="counter-label">Years of Experience</div>
+		</div>
+		<div class="col-md-3">
+			<div class="counter-up" data-count="150">0</div>
+			<div class="counter-label">Projects Completed</div>
+		</div>
+		<div class="col-md-3">
+			<div class="counter-up" data-count="8">0</div>
+			<div class="counter-label">Professional Awards</div>
+		</div>
+		<div class="col-md-3">
+			<div class="counter-up" data-count="100">0</div>
+			<div class="counter-label">Happy Customers</div>
+		</div>
 	</div>
-</section> -->
+</div>
 <!-- image filtering -->
-<div class="container text-center mt-4">
+<!-- <div class="container text-center mt-4">
 	<div class="btn-group" role="group" aria-label="Filter Buttons">
 		<div class="btn-row">
 			<button type="button" class="filter-btn filter-active" data-filter="all">All</button>
@@ -400,7 +471,7 @@
 
 
 	</div>
-</div>
+</div> -->
 <!-- footer section -->
 <footer class="footer">
 	<div class="container">

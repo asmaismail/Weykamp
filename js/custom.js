@@ -31,4 +31,17 @@ $(document).ready(function() {
       }
   });
 });
-//
+// counter up
+$(document).ready(function(){
+  $('.counter-up').each(function () {
+      $(this).prop('Counter', 0).animate({
+          Counter: $(this).data('count')
+      }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+  });
+});
