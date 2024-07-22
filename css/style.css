@@ -112,7 +112,8 @@ sup { top: -.5em; }
 .main-services{padding:50px 30px;max-width:80%;width:100%;box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);margin:-50px auto 0;position: relative;z-index: 9999999;}
 .banner-services .imgbox img{margin:0 auto;}
 .banner-services .imgbox{margin-bottom:50px;}
-.banner-services .contentbox h6{text-transform: uppercase; font-size:16px;line-height: 26px;color:#000;font-weight: 700;margin-bottom: 20px;text-align: center;}
+.banner-services .contentbox h6{text-transform: uppercase; font-size:16px;line-height: 26px;color:#000;font-weight: 700;
+  margin-bottom: 20px;text-align: center;}
 .banner-services .contentbox p{text-align: center;}
 .whoweare{padding:60px 0;}
 .whoweare .contentbox{width:100%;max-width: 66%;margin: 0 auto;text-align: center;}
@@ -143,13 +144,20 @@ sup { top: -.5em; }
 .img-container {display: none;}
 .img-container.show {display: block;}
 .btn-group {display: flex;flex-wrap: wrap;gap: 10px;}
-@media (max-width: 768px) {
-  .btn-group { flex-direction: column;}
-.btn-group .btn {  width: 100%; }
-}
+@media (max-width: 768px) {.btn-group { flex-direction: column;}.btn-group .btn {  width: 100%; }}
 @media (max-width: 576px) {
-  .btn-group .btn {padding: 10px;font-size: 14px; }
+.btn-group .btn {padding: 10px;font-size: 14px; }}
+.filter-img{height: 40vh; margin-bottom: 15px;}
+.team-section {text-align: center;}
+.team-section p { color: #777;}
+.team-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 5px;
+  margin: 0 auto; 
 }
-.filter-img{
-  height: 40vh; margin-bottom: 15px;
+.experts{
+  background-color: rgb(246, 244, 244); width: 100%;
 }
+
