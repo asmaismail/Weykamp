@@ -1,6 +1,7 @@
 html, body {
 	 -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 /* RESET  */
 body {font: 400 14px/18px 'Montserrat'; min-width: 320px; color: #000; }
@@ -148,72 +149,52 @@ sup { top: -.5em; }
 .filter-img{height: 40vh; margin-bottom: 20px;}
 .team-section {text-align: center;}
 .team-section p { color: #777;}
-.team-section img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  padding: 5px;
-  margin: 0 auto; 
-}
-.experts{
-  background-color: rgb(246, 244, 244); width: 100%;
-}
+.team-section img {width: 100%;height: auto;object-fit: cover;padding: 5px;margin: 0 auto; }
+.experts{background-color: rgb(246, 244, 244); width: 100%;}
 /* counter up  */
-.counter {
-  color: white;
-  text-align: center;
-  padding: 50px 0;
-  overflow: hidden;
-  content: "";
-  background: url('../images/experience-bg.jpg') no-repeat center;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70vh;
-  z-index: -1;
-}
-
-.counter-up {
-  font-size: 3em;
-  font-weight: bold;
-}
-
-.counter-label {
-  font-size: 1.2em;
-}
+.counter {color: white;text-align: center;padding: 50px 0;overflow: hidden;content: "";background: url('../images/experience-bg.jpg') no-repeat center;
+  background-size: cover;top: 0;left: 0;width: 100%;height: 70vh;z-index: -1;}
+.counter-up {font-size: 3em;font-weight: bold;}
+.counter-label {font-size: 1.2em;}
 /* services  */
-.tab-content img {
-  width: 100%;
-  height: auto;
-}
-.services .list{
-  list-style: disc; 
-  color: gray;
-  display: flex;
-  flex-direction: row;
-  gap: 18px;
-}
-.services .row .col-md-12  h6{
-  text-align: center!important;
-  width: auto; background-color: yellow; max-width: 35px;
-}
+.tab-content img {width: 100%;height: auto;}
+.services .list{list-style: disc; color: gray;display: flex;flex-direction: row;gap: 18px;}
+.services {background-color: white; color: rgb(250, 247, 247);padding: 50px 0;background-image: radial-gradient(rgb(248, 244, 244) 1px, transparent 1px); background-size: 10px 10px;}
+.services h6{text-align: center!important; justify-content: center; align-items: center;width: auto; max-width: 100%; margin-left: 0px;}
 .services .button{border: 1px solid black; color: black; background-color: white!important; padding: 8px; margin-top: 30px; margin-bottom: 8px;}
-.services .button:hover{background-color: green!important; color: white;
-}
-.services .services-links li a{
-text-decoration: none; color: black!important; margin-left: 5px; border-radius: 0%;}
-.services .services-links li .active{
-  background-color: green!important; color: white!important; text-decoration: none;
-}
+.services .button:hover{background-color: green!important; color: white;}
+.services h3{color: black;}
+.services .services-links li a{text-decoration: none; color: black!important; margin-left: 5px; border-radius: 0%;}
+.services .services-links li .active{background-color: green!important; color: white!important; text-decoration: none; padding: 10px;}
 .banner-services{margin-top: 20px; background-color: white;}
-.carousel{
-  /* height: 90vh; */
-}
 .carousel img{ height: 500px!important;}
-.navbar{
-  height: 80px;
-
-}
+.navbar{ height: 80px;}
+.modal-body{background-color: rgb(199, 194, 194);}
+.modal-body input {border: 1px solid black; box-sizing: border-box; box-shadow: gray; width: 100%; border-radius: 10px;}
+.modal-body button{background-color: white!important; color: black ; padding: 8px; border-radius: 2px;}
+.modal-body button:hover{background-color: green!important;color: white;}
 .navbar .row{ margin: 15px;}
-.navbar .contact-item{margin-right: -10px; background-color: yellow;}
+.navbar .contact-item{margin-right: -10px;}
+.nav2{border-radius: 10px;  z-index: 2 !important; position: relative;}
+.nav2 img{display: none;}
+.navitem li {text-decoration: none}
+.navbar-expand-lg {border-radius: 8px; display: flex; flex-direction: row; background-color: #000;}
+.nav2 .navbar ul li a{color: rgba(255, 255, 255, 0.845); text-decoration: none;}
+.contactus {display: block!important; background-color: green; color: #fff;padding: 2px;padding-top: 2px;margin-top: 1px;text-decoration: none;}
+@media (min-width: 320px) and (max-width: 786px) {
+.navbar-brand{display: block!important;}
+.main-services a .contentbox h6 {text-decoration: none !important;}
+.topnavbar{display: none!important; height: 0%; width:0% ;}}
+.navbar-brand{display: none}
+.navbar-toggler .navbar-nav {background-color: white!important; z-index: 5;}
+.navicon{color: green;font-size: 30px; margin-left: 10px;}
+.navp{font-size: 10px; margin-left: 5px; margin-top: 8px;} 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  border-radius: 0%;
+  z-index: 10;
+  background-color: black;
+  overflow-x: hidden;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <title>Document</title>
+</head>
+<body>
+ <style>
+  body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.form {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent; /* Make form background transparent */
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.contactus {
+  position: relative;
+  z-index: 1;
+  color: white; /* Ensure link text is white */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 150%;
+  height: 100%;
+  background-color: green; /* Change to green as the primary background */
+  transform: skewX(-45deg);
+  transform-origin: top left;
+  z-index: -1;
+}
+
+.form::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 60%;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  transform: skewX(-45deg);
+  transform-origin: top left;
+  z-index: -2;
+}
+
+ </style>
+
+<form class="form my-2 my-lg-0">
+  <a class="contactus" href="#">Contact us</a>
+</form>
+
+</body>
+</html>

@@ -45,3 +45,20 @@ $(document).ready(function(){
       });
   });
 });
+// navbar
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("nav2");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+      navbar.classList.add("container-fluid");
+      navbar.classList.remove("container");
+    } else {
+      navbar.classList.remove("sticky");
+      navbar.classList.remove("container-fluid");
+      navbar.classList.add("container");
+    }
+  }
