@@ -62,3 +62,9 @@ $(document).ready(function(){
       navbar.classList.add("container");
     }
   }
+// navbar toggle
+$(document).ready(function(){
+  $('.navbar-toggler').click(function(){
+      $('.navbar').toggleClass('white-background');
+  });
+});
