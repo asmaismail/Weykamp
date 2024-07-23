@@ -107,9 +107,10 @@ sup { top: -.5em; }
 .extra-light{font-weight:200;}
 .regular{font-weight:400;}
 .banner .banner-slider img{width:100%;height:auto;}
-.banner-services{position: relative;}
-.main-services{padding:50px 30px;width:80%;box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);margin-bottom: 30px; background-color: white !important; justify-content: center; align-items: center; margin-left: 120px !important;
-  margin:-50px auto 0;position: relative;z-index: index 1;opacity: 1; margin-top: -50px; position: fixed;}
+/* .banner-services{position: relative;} */
+.main-services{padding:50px 30px;width:80%;box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);margin-bottom: 30px;
+   background-color: white !important; justify-content: center; align-items: center; margin-left: 120px !important;
+  margin:-50px auto 0;position: relative;z-index: index 1;opacity: 1; margin-top: -50px;}
 .banner-services .imgbox img{margin:0 auto;}
 .banner-services .imgbox{margin-bottom:50px;}
 .banner-services .contentbox h6{text-transform: uppercase; font-size:16px;line-height: 26px;color:#000;font-weight: 700;
@@ -158,10 +159,10 @@ sup { top: -.5em; }
 .counter-up {font-size: 3em;font-weight: bold;}
 .counter-label {font-size: 1.2em;}
 /* services  */
-.services-links{ margin-top: -230px !important;}
+.services-links{ margin-top: 0px !important;}
 .tab-content img {width: 100%;height: auto;}
 .services .list{list-style: disc; color: gray;display: flex;flex-direction: row;gap: 18px;}
-.services {background-color: white; color: rgb(250, 247, 247);margin-top: 200px ;padding: 50px 0;background-image: radial-gradient(rgb(238, 235, 235) 1px, transparent 1px); background-size: 10px 10px;}
+.services {background-color: white; color: rgb(250, 247, 247) ;padding: 50px 0;background-image: radial-gradient(rgb(238, 235, 235) 1px, transparent 1px); background-size: 10px 10px;}
 .services h6{text-align: center!important; justify-content: center; align-items: center;width: auto; max-width: 100%; margin-left: 0px;}
 .services .button{border: 1px solid black; color: black; background-color: white!important; padding: 8px; margin-top: 30px; margin-bottom: 8px;}
 .services .button:hover{background-color: green!important; color: white;}
@@ -184,9 +185,9 @@ sup { top: -.5em; }
 .nav2 .navbar ul li a{color: rgba(255, 255, 255, 0.845); text-decoration: none;}
 .contactus {display: block!important; background-color: green; color: #fff;padding: 2px; border-radius: 3px;margin-top: 1px;text-decoration: none;}
 @media (min-width: 320px) and (max-width: 786px) {
-  .main-services{margin-left: 30px !important; margin-top: -120px !important;}
-  .services{margin-top: 590px !important;}
-  .services-links{margin-top: -650px !important;}
+  .main-services{margin-left: 30px !important; }
+  .services{margin-top: 0px !important;}
+  .services-links{margin-top: 0px !important;}
 .navbar-brand{display: block!important;}
 .main-services a .contentbox h6 {text-decoration: none !important;}
 .topnavbar{display: none!important; height: 0%; width:0% ;}
